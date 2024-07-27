@@ -175,6 +175,23 @@ justify-content: center;
   margin-top: 80px;
   gap: 140px;
 }
+
+#experience-badge{
+  padding: 45px 42px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-left: -100px;
+  margin-top: -100px;
+}
+
+#experience-year{
+  font-size: 4rem;
+  font-weight: 700;
+  font-weight: 500;
+}
+.feature-architect {
+   width: 100%;
+}
 /* sponsor related design */
 
 .sponspor-info{
@@ -193,6 +210,7 @@ justify-content: center;
 @media screen and (max-width:576px) {
   .navbar,
   .nav-links,
+  .features,
   .teams
   {
     flex-direction: column;
@@ -220,11 +238,20 @@ justify-content: center;
     justify-items: center;
     gap: 24px;
   }
+  #experience-badge{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+   
+  }
+  
   
 }
 @media screen and (min-width:576) and (max-width:992px){
   
-  .teams{
+  .teams,
+  .features
+  {
     flex-direction: column;
   }
   .our-features{
@@ -233,5 +260,11 @@ justify-content: center;
   .sponsor-companies{
     grid-template-columns: repeat(2,1fr);
     gap: 50px;
+  }
+  #experience-badge{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+   
   }
 }
